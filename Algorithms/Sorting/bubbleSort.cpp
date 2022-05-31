@@ -3,7 +3,7 @@
 Bubble Sort
 
 - take larger element to the end by repeatedly swapping the adjacent elements.
-- we use two nested loops so Time Complexity = O(N**2)
+- Time Complexity = O(N**2)
 
 */
 
