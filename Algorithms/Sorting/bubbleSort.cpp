@@ -1,12 +1,3 @@
-/*
-
-Bubble Sort
-
-- take larger element to the end by repeatedly swapping the adjacent elements.
-- Time Complexity = O(N**2)
-
-*/
-
 #include <iostream>
 
 using namespace std;
@@ -17,10 +8,10 @@ void bubbleSort( int arr[], int n){
 
         bool swapped = false;
 
-        // repeated swapping
+        
         for( int j=0; j<n-1-i; j++){
 
-            // if greater -> push to the end
+            
             if( arr[j]>arr[j+1] ){
 
                 swap(arr[j], arr[j+1]);

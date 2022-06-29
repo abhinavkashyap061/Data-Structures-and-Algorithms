@@ -1,12 +1,3 @@
-/*
-
-Selection Sort
-
-- Repeatedly find the minimum element from unsorted array and put it in the beginning.
-- Time Complexity = O(N**2)
-
-*/
-
 #include <iostream>
 
 using namespace std;
@@ -19,7 +10,7 @@ void selectionSort( int arr[], int n){
 
         int min_position = i;
 
-        // find out minimum element
+        
         for( int j=i+1; j<n; j++){
 
             if( arr[j]<current ){
@@ -27,7 +18,7 @@ void selectionSort( int arr[], int n){
             }
         }
 
-        // swap outside the loop
+        
         swap(arr[i], arr[min_position]);
     }
     

@@ -1,12 +1,3 @@
-/*
-
-Insertion Sort
-
-- 
-- 
-
-*/
-
 #include <iostream>
 
 using namespace std;
