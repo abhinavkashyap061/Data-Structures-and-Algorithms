@@ -6,5 +6,5 @@
 
 - [transpose of matrix](https://leetcode.com/problems/transpose-matrix/)
 
-- [rotate image/matrix](https://leetcode.com/problems/rotate-image/)
+- [rotate image](https://leetcode.com/problems/rotate-image/)
 
