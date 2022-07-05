@@ -1,4 +1,4 @@
-- [wave print](https://www.codingninjas.com/codestudio/problems/print-like-a-wave_893268)
+- [wave print](https://www.geeksforgeeks.org/print-matrix-in-wave-form/)
 
 - [spiral print](https://leetcode.com/problems/spiral-matrix/)
 
