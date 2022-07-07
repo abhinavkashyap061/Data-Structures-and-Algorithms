@@ -1,5 +1,14 @@
+/*
 
-// Problem link: https://www.codingninjas.com/codestudio/problems/print-like-a-wave_893268
+- Problem link: https://www.geeksforgeeks.org/print-matrix-in-wave-form/
+
+- in even column, we go from top to bottom
+
+- in odd column, we go from bottom to top
+
+- Time Complexity: O(rows * columns)
+
+*/
 
 vector<int> wavePrint(vector<vector<int>> arr, int nRows, int mCols)
 {
