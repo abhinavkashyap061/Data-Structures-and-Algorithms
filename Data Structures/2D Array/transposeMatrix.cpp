@@ -1,5 +1,18 @@
 
-// Problem link: https://leetcode.com/problems/transpose-matrix/
+/*
+
+Transpose of a Matrix
+=====================
+
+- Transpose of a matrix is obtained by changing rows to columns and columns to rows.
+
+- Transpose of A[][] is obtained by changing A[i][j] to A[j][i].
+
+- Time Complexity: O(rows * columns)
+ 
+- Problem link: https://leetcode.com/problems/transpose-matrix/
+
+*/
 
 class Solution {
 public:
