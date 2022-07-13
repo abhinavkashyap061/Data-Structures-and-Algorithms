@@ -1,7 +1,7 @@
 
 ## Largest Element
 
-<img src="" alt="Largest Element Question">
+<img src="https://github.com/abhinavkashyap061/Data-Structures-and-Algorithms/blob/main/Data%20Structures/Array/Largest%20Element/LargestElement.png?raw=true" alt="Largest Element Question">
 
 - Solution:
 ```cpp

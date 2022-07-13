@@ -1,7 +1,7 @@
 
 ## Maximum Subarray Sum
 
-<img src="" alt="Maximum Subarray Sum Question">
+<img src="https://github.com/abhinavkashyap061/Data-Structures-and-Algorithms/blob/main/Data%20Structures/Array/Maximum%20Subarray%20Sum/MaximumSubarraySum.png?raw=true" alt="Maximum Subarray Sum Question">
 
 - Solution:
 ```cpp
