@@ -1,0 +1,1 @@
+<img src="" alt="Binomial Coefficient Question">
