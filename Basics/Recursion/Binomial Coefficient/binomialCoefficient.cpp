@@ -12,10 +12,12 @@ int factorial(int n){
 
 int C(int n, int k) {
     
-    if( n==1 ){
+    // base case
+    if( n==0 || k==0){
         return 1;
     }
    
+   // recursive relation
    int a = factorial(n-1)/(factorial(k-1)*factorial(n-k));
    int b = factorial(n-1)/(factorial(k)*factorial(n-k-1));
    
