@@ -63,14 +63,6 @@ class Product{
 
 int main() {
 
-    // Product camera;
-
-    // camera.setMrp(100);
-    // camera.setSellingPrice(200);
-
-    // cout<<"MRP: "<<camera.getMrp()<<endl;
-    // cout<<"Selling Price: "<<camera.getSellingPrice()<<endl;
-
     Product camera(5, "GoProHero9", 28000, 26000);
     cout<<"MRP: "<<camera.getMrp()<<endl;
     cout<<"Selling Price: "<<camera.getSellingPrice()<<endl;
