@@ -1,7 +1,7 @@
 
 ## Fibonacci Number
 
-<img src="" alt="Fibonacci Number Question">
+<img src="https://github.com/abhinavkashyap061/Data-Structures-and-Algorithms/blob/main/Basics/Recursion/Fibonacci%20Number/FibonacciNumber.png?raw=true" alt="Fibonacci Number Question">
 
 - Solution:
 ```cpp

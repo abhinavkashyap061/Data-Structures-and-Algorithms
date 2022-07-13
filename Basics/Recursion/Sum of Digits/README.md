@@ -1,7 +1,7 @@
 
 ## Sum of Digits
 
-<img src="" alt="Sum of Digits Question">
+<img src="https://github.com/abhinavkashyap061/Data-Structures-and-Algorithms/blob/main/Basics/Recursion/Sum%20of%20Digits/SumOfDigits.png?raw=true" alt="Sum of Digits Question">
 
 - Solution:
 ```cpp

@@ -1,7 +1,7 @@
 
 ## Factorial
 
-<img src="" alt="Factorial Question">
+<img src="https://github.com/abhinavkashyap061/Data-Structures-and-Algorithms/blob/main/Basics/Recursion/Factorial/Factorial.png?raw=true" alt="Factorial Question">
 
 - Solution:
 ```cpp

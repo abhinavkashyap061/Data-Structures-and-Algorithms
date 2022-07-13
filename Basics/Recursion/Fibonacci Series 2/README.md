@@ -1,7 +1,7 @@
 
 ## Fibonacci Series 2
 
-<img src="" alt="Fibonacci Series 2 Question">
+<img src="https://github.com/abhinavkashyap061/Data-Structures-and-Algorithms/blob/main/Basics/Recursion/Fibonacci%20Series%202/FibonacciSeries2.png?raw=true" alt="Fibonacci Series 2 Question">
 
 - Solution:
 ```cpp
