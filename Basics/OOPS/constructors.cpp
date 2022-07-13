@@ -67,7 +67,5 @@ int main() {
     cout<<"MRP: "<<camera.getMrp()<<endl;
     cout<<"Selling Price: "<<camera.getSellingPrice()<<endl;
 
-
-
     return 0;
 }
