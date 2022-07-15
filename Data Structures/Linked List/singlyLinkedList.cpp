@@ -1,30 +1,72 @@
+/*
+
+    Linked List
+    ===========
+
+    What is Linked List?
+    - It is a linear data structure made using collection of nodes.
+        - A node contains a data and the address of the next node.
+
+    Why Linked List is needed?
+    - We can't change the size of an array in runtime, after initialising it.
+    - In vectors, which is a type of dynamic array in which after the vector gets full/reaches capacity after intialising it.
+      It doubles its capacity and creates a new vector of double size and copies all the values in it, by allocating new storage
+      which is not the optimal situation as we are creating new memory and copying the values which takes time.
+    - So, to avoid these things we use Linked List.
+
+    Advatages of Linked List:
+    - Linked List is a dynamic data structure which can be shrinked or grown during the runtime only, hence no memory wastage. 
+    - Insertion and Deletion in Linked List is easy in Linked List
+        - No shifting is needed
+            - In array, if we have to add an element we would have to shift all the next elements to maintain order.
+      
+
+*/
+
 #include <iostream>
 
 using namespace std;
 
+// Node Structure
 class Node{
 
     public:
         int data;
         Node *next;
 
-        // Linked List initialization
+        // constructor intialisation
         Node(int data){
             this -> data = data;
             this -> next = NULL;
         }
+
+        // destructor
+        ~Node(){
+
+            int value = this -> data;
+
+            // freeing the memory
+            if( this->next!-NULL ){
+                delete next;
+                this -> next = NULL;
+            }
+
+            cout<<"memory is freed for node with data: "<<value<<endl;
+        }
 };
 
-void printLinkedList( Node * &head ){
+/*
 
-    Node * temp = head;
+    Singly Linked List Operations
+    =============================
 
-    while( temp!=NULL ){
+    - Insert node at Head
+    - Insert node at tail
+    - Insert node at any position
+    - Delete node at any position
+    - Print linked List
 
-        cout<< temp -> data <<" ";
-        temp = temp -> next;
-    }
-}
+*/
 
 void insertAtHead( Node * &head, int data ){
 
@@ -75,6 +117,19 @@ void deleteNode(int position, Node * &head){
 
     Node *temp = head;
 
+    // deleting first/start node
+    if( position==1 ){
+
+        // storing the head
+        Node * temp = head;
+
+        // move head forward
+        head = head -> next;
+
+        // freeing the memory
+        delete temp;
+    }
+
     int i=1;
 
     while( i<position-1 ){
@@ -86,35 +141,25 @@ void deleteNode(int position, Node * &head){
     temp -> next = (temp -> next) -> next;
 }
 
-// class List{
+void printLinkedList( Node * &head ){
 
-//     Node *head;
-//     Node *tail;
+    Node * temp = head;
 
-//     public:
-//         List():head(NULL), tail(NULL){}
+    while( temp!=NULL ){
 
-//         // Push Front Operation
-//         void push_front(int data){
+        if( temp -> next == NULL ){
+            cout<< temp -> data;
+            return;
+        }
 
-//             if( head==NULL ){
-
-//                 Node *n = new Node(data);
-//                 head = tail = n;
-//             }else{
-
-//                 Node *n = new Node(data);
-//                 n -> next = head;
-//                 head = n;
-//             }
-//         }
-// };
+        cout<< temp -> data <<" -> ";
+        temp = temp -> next;
+    }
+}
 
 int main(){
 
     Node *newNode = new Node(10);
-    // cout<< newNode -> data << endl;
-    // cout<< newNode -> next << endl;
 
     Node *head = newNode;
     Node *tail = newNode;
@@ -126,6 +171,7 @@ int main(){
     insertAtTail(tail, 888);
 
     insertAtPosition(5, head, 6969);
+    deleteNode(1, head);
 
     printLinkedList(head);
 }
