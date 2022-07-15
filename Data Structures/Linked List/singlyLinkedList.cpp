@@ -46,7 +46,7 @@ class Node{
             int value = this -> data;
 
             // freeing the memory
-            if( this->next!-NULL ){
+            if( this->next!=NULL ){
                 delete next;
                 this -> next = NULL;
             }
@@ -126,19 +126,41 @@ void deleteNode(int position, Node * &head){
         // move head forward
         head = head -> next;
 
+        temp -> next = NULL;
+
         // freeing the memory
         delete temp;
+    }else{
+
+        // deleting any middle node or last node
+        Node * prev = NULL;
+        Node * curr = head;
+
+        int i=1;
+
+        while( i<=position ){
+
+            prev = curr;
+            curr = curr -> next;
+            i++;
+        }
+
+        prev -> next = curr -> next;
+
+        curr -> next = NULL;
+
+        delete curr;
     }
 
-    int i=1;
+    // int i=1;
 
-    while( i<position-1 ){
+    // while( i<position-1 ){
 
-        temp = temp -> next;
-        i++;
-    }
+    //     temp = temp -> next;
+    //     i++;
+    // }
 
-    temp -> next = (temp -> next) -> next;
+    // temp -> next = (temp -> next) -> next;
 }
 
 void printLinkedList( Node * &head ){
