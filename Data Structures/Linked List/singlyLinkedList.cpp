@@ -179,6 +179,23 @@ void printLinkedList( Node * &head ){
     }
 }
 
+// recursive search
+int search(Node * &head, int key){
+
+    Node * temp = head;
+
+    //base case
+    if( temp==NULL ){
+        return -1;
+    }
+    
+    if( temp -> data == key ){
+        return 1;
+    }
+
+    return 1 + search(head -> next, key);
+}
+
 int main(){
 
     Node *newNode = new Node(10);
@@ -193,7 +210,9 @@ int main(){
     insertAtTail(tail, 888);
 
     insertAtPosition(5, head, 6969);
-    deleteNode(1, head);
+    // deleteNode(1, head);
+
+    cout << "node " << search(head, 10) << endl;
 
     printLinkedList(head);
 }
