@@ -1,3 +1,4 @@
+// pre order traversal: root, left, right
 
 // input: 1 2 4 -1 -1 5 7 -1 -1 -1 3 -1 6 -1 -1
 // output: 1 2 4 5 7 3 6 
@@ -45,7 +46,7 @@ Node * buildTree(){
 
 }
 
-void printPreOrder(Node * root){
+void preOrderTraversal(Node * root){
 
     if( root==NULL ){
 
@@ -54,15 +55,15 @@ void printPreOrder(Node * root){
 
     cout<< root -> data << " ";
 
-    printPreOrder( root -> left );
-    printPreOrder( root -> right );
+    preOrderTraversal( root -> left );
+    preOrderTraversal( root -> right );
 
 }
 
 int main(){
 
     Node * root = buildTree();
-    printPreOrder(root);
+    preOrderTraversal(root);
 
     return 0;
 }
