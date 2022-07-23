@@ -60,6 +60,7 @@ void printInOrder(Node * root){
 }
 
 // traverse from root to leaf
+// time complexity: O(Height of BST)
 bool searchBst(Node * root, int key){
 
     if( root==NULL ){
